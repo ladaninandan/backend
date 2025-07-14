@@ -6,6 +6,7 @@ require('dotenv').config();
 const app = express();
 
 // CORS middleware - allow all origins
+app.use(cors());
 app.use(cors({
   origin: 'https://frontend-5qa6.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
