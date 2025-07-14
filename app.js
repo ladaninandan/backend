@@ -8,7 +8,7 @@ const app = express();
 // CORS middleware - allow all origins
 app.use(cors());
 app.use(cors({
-  origin: 'https://frontend-rm9t.vercel.app/',
+  origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: '*',
   credentials: true,
