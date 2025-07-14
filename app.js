@@ -10,7 +10,7 @@ app.use(cors());
 app.use(cors({
   origin: 'https://frontend-rm9t.vercel.app/',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  allowedHeaders: '*'
 }));
 
 app.use(express.json());
