@@ -7,7 +7,7 @@ const app = express();
 
 // CORS middleware - allow all origins
 app.use(cors({
-  origin: '*',
+  origin: 'https://frontend-5qa6.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
