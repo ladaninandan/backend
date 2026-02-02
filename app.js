@@ -30,5 +30,7 @@ app.get('/health', (req, res) => {
   res.json({ status: 'OK', message: 'StackIt API is running' });
 });
 
+console.log("hey")
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`StackIt API running on port ${PORT}`)); 
